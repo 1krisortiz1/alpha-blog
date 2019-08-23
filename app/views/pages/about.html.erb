@@ -1,0 +1,18 @@
+<h1>Alpha Blog About Page</h1>
+
+<p><%= link_to 'Home', root_path %></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AlphaBlog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <%= image_tag("business-pug-working-on-laptop.jpg", :size => "500x320", :crop => :fill) %>
+    <%= yield %>
+  </body>
+</html>
